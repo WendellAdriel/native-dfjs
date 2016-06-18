@@ -1,7 +1,11 @@
 <Page loaded="config">
   <StackLayout orientation="vertical">
     <Image src="res://icon" stretch="none" horizontalAlignment="center" />
+    <ActivityIndicator busy="{{ isLoading }}" />
     <Label text="Testando funcionalidades" class="title" />
-    <Button text="Consumir API" tap="getInfo" />
+    <TextField id="numero" keyboardType="number" text="{{ numero }}" hint="Número do Pokemon" />
+    <Button text="Recuperar dados pokemon" tap="getInfo" />
+    <Button text="Tirar foto" tap="takePicture" class="btn-camera" />
+    <Image id="foto" />
   </StackLayout>
 </Page>

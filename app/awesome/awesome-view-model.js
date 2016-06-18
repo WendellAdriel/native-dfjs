@@ -2,10 +2,14 @@ var Observable = require("data/observable").Observable;
 var fetchModule = require("fetch");
 
 function Info(info) {
-  var viewModel = new Observable({});
+  var info = info || {};
+
+  var viewModel = new Observable({
+    numero : info.numero || null
+  });
 
   viewModel.getAPIInfo = function () {
-    return fetchModule.fetch('http://pokeapi.co/api/v2/pokemon/1', {
+    return fetchModule.fetch('http://pokeapi.co/api/v2/pokemon/' + viewModel.get('numero'), {
       method : 'GET',
       headers : {
         'Content-Type' : 'application/json'
@@ -28,4 +32,4 @@ function handleErrors(response) {
   return response;
 }
 
-module.exports = Test;
+module.exports = Info;

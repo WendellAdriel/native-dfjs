@@ -1,3 +1,10 @@
 Button {
   background-color: green;
+  color: white;
+  font-size: 10;
+  font-weight: bold;
+}
+
+.btn-camera {
+  background-color: red;
 }

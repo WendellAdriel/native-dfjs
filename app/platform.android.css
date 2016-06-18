@@ -1,5 +1,7 @@
 .title {
-    font-size: 30;
+    color: #bd000d;
+    font-size: 22;
+    font-weight: bold;
     horizontal-align: center;
     margin: 20;
 }
