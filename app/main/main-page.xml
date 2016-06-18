@@ -1,0 +1,9 @@
+<Page loaded="config">
+  <StackLayout orientation="vertical">
+    <Image src="res://icon" stretch="none" horizontalAlignment="center" />
+    <Label text="My first NativeScript App" class="title" />
+    <TextField id="nome" text="{{ nome }}" hint="Nome" />
+    <Button text="Abrir Alerta" tap="openAlert" />
+    <Button text="Mudar Página" tap="changePage" />
+  </StackLayout>
+</Page>

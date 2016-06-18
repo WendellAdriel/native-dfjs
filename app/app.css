@@ -1,0 +1,15 @@
+@import { url('~/platform.css') };
+
+Page {
+  background-color: lightgrey;
+  font-size: 15;
+}
+
+Button {
+    font-size: 42;
+    horizontal-align: center;
+}
+
+Image {
+  margin-bottom: 20px;
+}

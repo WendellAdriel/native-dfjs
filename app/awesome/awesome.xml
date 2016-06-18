@@ -1,0 +1,7 @@
+<Page loaded="config">
+  <StackLayout orientation="vertical">
+    <Image src="res://icon" stretch="none" horizontalAlignment="center" />
+    <Label text="Testando funcionalidades" class="title" />
+    <Button text="Consumir API" tap="getInfo" />
+  </StackLayout>
+</Page>
